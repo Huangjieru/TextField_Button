@@ -54,6 +54,7 @@ extension ViewController: UITextFieldDelegate {
         print("增加文字數: \(string.count)")
         print("刪除文字數目: \(range.length)")
         print("增加或刪除的文字位置: \(range.location)")
+        print("總文字長度:\(myTextField.text!.count + string.count - range.length)")
         print("------------------")
         if let text = myTextField.text,  text.count + string.count - range.length != 0 {
            canUseSendButton()
